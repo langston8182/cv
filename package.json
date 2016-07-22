@@ -2,6 +2,7 @@
   "name": "cv",
   "private": true,
   "devDependencies": {
+    "angular-ui-bootstrap": "^2.0.0",
     "autoprefixer-core": "^5.2.1",
     "grunt": "^0.4.5",
     "grunt-angular-templates": "^0.5.7",
@@ -40,5 +41,8 @@
   },
   "scripts": {
     "test": "karma start test/karma.conf.js"
+  },
+  "dependencies": {
+    "angular-ui-bootstrap": "^2.0.0"
   }
 }
