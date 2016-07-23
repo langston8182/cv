@@ -34,5 +34,10 @@ angular
         templateUrl: 'views/cv.html',
         controller: 'CvCtrl',
         controllerAs: 'cv'
-      });
-  });
+      })
+      .when('/informations', {
+         templateUrl: 'views/informations.html',
+         controller: 'InformationsCtrl',
+         controllerAs: 'informations'
+      });    
+});

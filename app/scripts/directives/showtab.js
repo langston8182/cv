@@ -9,7 +9,7 @@
 angular.module('cvApp')
   .directive('showtab', function () {
     return {
-      link: function postLink(scope, element, attrs) {
+      link: function postLink(scope, element) {
         element.click(function (e) {
           	e.preventDefault();
           	element.tab('show');

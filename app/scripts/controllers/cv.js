@@ -38,7 +38,8 @@ angular.module('cvApp')
         nomCat : 'Langages et frameworks',
         items: 
         [
-          {nom: 'J2EE (Java, Spring, Hibernate)', rate: 3},
+          {nom: 'Java', rate: 5},
+          {nom: 'J2EE (Java, Spring, Hibernate)', rate: 5},
           {nom: 'Framework Javascript (NodeJS, AngularJS, ExpressJS)', rate: 3},
           {nom: 'Oracle', rate: 3},
         ]
@@ -47,26 +48,25 @@ angular.module('cvApp')
         nomCat : 'Base de données et SGDB',
         items: 
         [
-          {nom: 'SQL', rate: 3},
+          {nom: 'SQL', rate: 5},
           {nom: 'MongoDB', rate: 3},
-          {nom: 'WebServices', rate: 3},
+          {nom: 'WebServices', rate: 4},
         ]
       },
       {
         nomCat : 'Systèmes d\'exploitation',
         items: 
         [
-          {nom: 'Linux (Red Hat, Solaris, Debian)', rate: 3},
-          {nom: 'Mac OS X', rate: 3},
-          {nom: 'WebServices', rate: 3},
+          {nom: 'Linux (Red Hat, Solaris, Debian)', rate: 4},
+          {nom: 'Mac OS X', rate: 4},
         ]
       },
       {
         nomCat : 'Outils',
         items: 
         [
-          {nom: 'Eclipse', rate: 3},
-          {nom: 'Grunt', rate: 3},
+          {nom: 'Eclipse', rate: 5},
+          {nom: 'Grunt', rate: 4},
           {nom: 'NPM', rate: 3},
           {nom: 'Talend', rate: 3},
           {nom: 'Virtual Box', rate: 3},
@@ -76,17 +76,17 @@ angular.module('cvApp')
         nomCat : 'Gestion de configuration',
         items: 
         [
-          {nom: 'SVN', rate: 3},
-          {nom: 'GIT', rate: 3},
+          {nom: 'SVN', rate: 5},
+          {nom: 'GIT', rate: 4},
         ]
       },
       {
         nomCat : 'Modélisation',
         items: 
         [
-          {nom: 'UML', rate: 3},
-          {nom: 'SCRUMM', rate: 3},
-          {nom: 'Modélio', rate: 3},
+          {nom: 'UML', rate: 5},
+          {nom: 'SCRUMM', rate: 5},
+          {nom: 'Modélio', rate: 4},
         ]
       },
     ]
