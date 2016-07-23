@@ -1,0 +1,37 @@
+<br />
+<div class="jumbotron">
+<div class="row">
+	<div class="col-md-6">
+		<img src="images/profile.png" />
+	</div>
+	<div class="col-md-6 text-left">
+		<b>Nom</b> : Marchive<br />
+		<b>Prénom</b> : Cyril<br />
+		<b>Date de naissance</b> : 8 Janvier 1982<br />
+		<b>Nationalité</b> : Française<br />
+		<span class="glyphicon glyphicon-envelope"></span>  8 rue Hélène Boucher 31600 MURET<br />
+		<span class="glyphicon glyphicon-phone"></span>  06 13 45 82 18<br />
+		<span class="glyphicon glyphicon-pencil"></span>  cyril.marchive@gmail.com<br /><br />
+		<b>Permis</b> : A, B, Haute Mer<br /><br />
+		<b>Loisirs</b> : <a data-toggle="modal" data-target="#certifications" href="#/informations">Electronique (Arduino)</a>, crossfit, bricolage
+	</div>
+</div>
+</div>
+
+<div class="modal fade" id="certifications" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+      <div class="modal-content">
+      	<div style="height: 305px;">
+   		 <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      		<div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        		<img ng-src="{{slide.image}}" style="margin:auto;" height="100%" width="100%" />
+        		<div class="carousel-caption">
+        		  <h4 style="color:black;">Note finale : {{slide.text}}</h4>
+       		    </div>
+        	</div>
+      	</div>
+    </div>
+</div>
+      </div>
+    </div>
+</div>
