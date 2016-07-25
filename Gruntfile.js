@@ -487,7 +487,7 @@ module.exports = function (grunt) {
     //'newer:jshint',
     //'newer:jscs',
     //'test',
-    'build',
+    //'build',
     'serve'
   ]);
 };

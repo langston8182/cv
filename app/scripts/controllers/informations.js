@@ -26,4 +26,11 @@ angular.module('cvApp')
     	id: currIndex++,
     	text: '94%'
     });
+    $scope.envoyer = function() {
+        serviceAjax.users().then(function(response) {
+            $scope.users = response;
+      }, function(error) {
+        console.log(error);
+      });
+    };
   });
