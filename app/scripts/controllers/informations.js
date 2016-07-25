@@ -8,7 +8,7 @@
  * Controller of the cvApp
  */
 angular.module('cvApp')
-  .controller('InformationsCtrl', function ($scope) {
+  .controller('InformationsCtrl', function ($scope, serviceAjax) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -27,10 +27,14 @@ angular.module('cvApp')
     	text: '94%'
     });
     $scope.envoyer = function() {
-        serviceAjax.users().then(function(response) {
-            $scope.users = response;
-      }, function(error) {
-        console.log(error);
-      });
+        serviceAjax.message($scope.message).then(function() {
+          reset();
+        }, function(err) {
+          throw(err);
+        });
     };
+
+    function reset() {
+        $scope.message = {};
+    }
   });

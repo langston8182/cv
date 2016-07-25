@@ -2,10 +2,10 @@
 <div class="jumbotron">
 <div class="container">
 <div class="row">
-	<div class="col-md-5">
+	<div class="col-md-4">
 		<img src="images/profile.png" />
 	</div>
-	<div class="col-md-7 text-left">
+	<div class="col-md-8 text-left">
 		<b>Nom</b> : Marchive<br />
 		<b>Prénom</b> : Cyril<br />
 		<b>Date de naissance</b> : 8 Janvier 1982<br />
@@ -21,22 +21,22 @@
 				<div class="col-md-4">
 					<div class="input-group">
 						<span class="input-group-addon" id="nom"><span class="glyphicon glyphicon-user"></span></span>
-						<input type="text" class="form-control" placeholder="Votre nom" ng-model="nom" />
+						<input type="text" class="form-control" placeholder="Votre nom" ng-model="message.nom" />
 					</div>
 					<br />
 					<div class="input-group">
 						<span class="input-group-addon" id="email"><span class="glyphicon glyphicon-envelope"></span></span>
-						<input type="email" class="form-control" placeholder="Email" ng-model="email"/>
+						<input type="email" class="form-control" placeholder="Email" ng-model="message.email"/>
 					</div>
 				</div>
 				<div class="col-md-8">
 					<div class="input-group">
 						<span class="input-group-addon" id="message"><span class="glyphicon glyphicon-pencil"></span></span>
-						<textarea class="form-control" rows="5" placeholder="Message" ng-model="message"></textarea>
+						<textarea class="form-control" rows="5" placeholder="Message" ng-model="message.contenu"></textarea>
 					</div>
 					<br />
 					<div class="text-right">
-						<button type="submit" class="btn btn-primary">Envoyer</button>
+						<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Envoyer</button>
 					</div>
 				</div>
 		</form>
@@ -45,6 +45,27 @@
 </div>
 
 </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Status</h4>
+        </div>
+        <div class="modal-body">
+          <p>Message envoyé</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 
 <div class="modal fade" id="certifications" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
@@ -62,5 +83,6 @@
 	  </div>
     </div>
 </div>
+
 </div>
 
