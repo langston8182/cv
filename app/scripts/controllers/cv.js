@@ -41,7 +41,7 @@ angular.module('cvApp')
           {nom: 'Java', rate: 5},
           {nom: 'J2EE (Java, Spring, Hibernate)', rate: 5},
           {nom: 'Framework Javascript (NodeJS, AngularJS, ExpressJS)', rate: 3},
-          {nom: 'Oracle', rate: 3},
+          {nom: 'WebServices', rate: 4},
         ]
       },
       {
@@ -50,7 +50,7 @@ angular.module('cvApp')
         [
           {nom: 'SQL', rate: 5},
           {nom: 'MongoDB', rate: 3},
-          {nom: 'WebServices', rate: 4},
+          {nom: 'Oracle', rate: 3},
         ]
       },
       {
@@ -68,6 +68,7 @@ angular.module('cvApp')
           {nom: 'Eclipse', rate: 5},
           {nom: 'Grunt', rate: 4},
           {nom: 'NPM', rate: 3},
+          {nom: 'Modélio', rate: 4},
           {nom: 'Talend', rate: 3},
           {nom: 'Virtual Box', rate: 3},
         ]
@@ -85,8 +86,14 @@ angular.module('cvApp')
         items: 
         [
           {nom: 'UML', rate: 5},
-          {nom: 'SCRUMM', rate: 5},
-          {nom: 'Modélio', rate: 4},
+        ]
+      },
+      {
+        nomCat : 'Méthodologie',
+        items: 
+        [
+          {nom: 'SCRUMM', rate: 4},
+          {nom: 'Cycle en V', rate: 4}
         ]
       },
     ]
