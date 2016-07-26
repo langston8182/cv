@@ -41,7 +41,7 @@ angular.module('cvApp')
           {nom: 'Java', rate: 5},
           {nom: 'J2EE (Java, Spring, Hibernate)', rate: 5},
           {nom: 'Framework Javascript (NodeJS, AngularJS, ExpressJS)', rate: 3},
-          {nom: 'WebServices', rate: 4},
+          {nom: 'WebServices (SOAP)', rate: 4},
         ]
       },
       {
@@ -59,6 +59,7 @@ angular.module('cvApp')
         [
           {nom: 'Linux (Red Hat, Solaris, Debian)', rate: 4},
           {nom: 'Mac OS X', rate: 4},
+          {nom: 'Windows', rate: 4},
         ]
       },
       {
