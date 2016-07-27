@@ -386,6 +386,8 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>',
           dest: '<%= yeoman.dist %>',
           src: [
+            'files',
+            'files/*',
             '*.{ico,png,txt}',
             '*.html',
             'images/{,*/}*.{webp}',
@@ -484,10 +486,10 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'newer:jshint',
-    'newer:jscs',
-    'test',
-    'build',
+    //'newer:jshint',
+    //'newer:jscs',
+    //'test',
+    //'build',
     'serve'
   ]);
 };
