@@ -11,7 +11,7 @@ angular.module('cvApp')
   .factory('serviceAjax', function ($http) {
     return {
       message: function (message) {
-        return $http.post('http://localhost:3000/message/', message);
+        return $http.post('http://localhost:8080/message/', message);
       }
     };
   });
