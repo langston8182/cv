@@ -19,7 +19,7 @@ app.post('/message', jsonParser, function(req, res) {
 	nom = message.nom;
 	email = message.email;
 	contenu = message.contenu;
-
+	console.log("jfksdjfsdkl");
 	var smtpTransport = nodemailer.createTransport("SMTP",{
         service: "Gmail",
         auth: {
@@ -46,6 +46,6 @@ app.post('/message', jsonParser, function(req, res) {
 	res.json({success: true});
 });
 
-app.listen(3000, function() {
-	console.log("Listening 3000");
+app.listen(8080, function() {
+	console.log("Listening 8080");
 });
