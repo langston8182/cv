@@ -11,7 +11,7 @@ angular.module('cvApp')
   .factory('serviceAjax', function ($http) {
     return {
       message: function (message) {
-        return $http.post('http://localhost:8080/message/', message);
+        return $http.post('http://www.cyrilmarchive.fr:8080/message/', message);
       }
     };
   });

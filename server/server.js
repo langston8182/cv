@@ -19,7 +19,6 @@ app.post('/message', jsonParser, function(req, res) {
 	nom = message.nom;
 	email = message.email;
 	contenu = message.contenu;
-	console.log("jfksdjfsdkl");
 	var smtpTransport = nodemailer.createTransport("SMTP",{
         service: "Gmail",
         auth: {
